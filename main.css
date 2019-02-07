@@ -1,0 +1,149 @@
+
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.welcome {
+  margin-top: 10%;
+}
+
+.navbar .navbar-toggler .spanButton {
+  background: #6C747C !important; /* color = grey */
+}
+
+.navbar-toggler.navToggle {
+  border-color: #6C747C; /* color = grey */
+}
+
+#pageContainer{
+  position: relative;
+  min-height: 100vh;
+  background-color: #0a192f; /* color = navy blue */
+}
+
+#typedText {
+  padding: 5% 0 20% 0;
+  color: #6C747C;
+}
+strong {
+  color: #5bebcb; /* color = teal */
+}
+
+#navLinks a {
+  color: #6C747C;
+}
+#navLinks a:hover {
+  color: #5bebcb;
+}
+
+#aboutMe {
+  margin-top: 10vh;
+}
+
+#aboutMe h1 {
+  color: #6C747C;
+  letter-spacing: 10px;
+  padding-bottom: 10vh;
+}
+
+#aboutMe p {
+  max-width: 75%;
+  text-align: justify;
+  color: #6C747C;
+}
+
+#aboutMe img {
+  width: 80%;
+  height: auto;
+}
+
+.blockquote p {
+  font-size: 2vh;
+}
+
+#myWork {
+  margin-top: 40vh;
+  color: #6C747C;
+}
+
+.projects {
+  background-color: #0a192f;
+  margin-top: 15vh;
+}
+
+.tempProject{
+  background-color: #6C747C;
+  padding: 10vw;
+  margin: auto;
+}
+/* this provides the needed space when using navagation links */
+h1::before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#contactMe {
+  margin: 40vh 0 0 0;
+  color: #6C747C;
+}
+
+#contactMe h1 {
+  margin-bottom: 8vh;
+}
+
+#contactMe form {
+  margin-bottom: 20vh;
+
+}
+
+#enterName {
+margin: auto;
+padding-top: 5vh;
+}
+
+#enterMessage {
+  width: 99%;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.btn-primary.customeButton {
+  background-color: #6C747C;
+  border-color: #6C747C;
+}
+
+.btn-primary.customeButton:hover {
+  background-color: #5bebcb;
+  border-color: #5bebcb;
+}
+
+footer {
+    bottom:0;
+    width:100%;
+    height: 60px;
+    position: fixed;
+    font-size: 16px;
+    background-color: #0a192f;
+    padding-bottom: 6%;
+}
+
+footer p {
+color: #5bebcb;
+}
+
+.fa {
+  padding: 25px;
+  margin-left: 2%;
+  width: 10px;
+  color: #6C747C;
+}
+
+.fa:hover {
+  color: #5bebcb;
+  text-decoration: none;
+}

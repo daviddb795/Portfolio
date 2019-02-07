@@ -1,0 +1,65 @@
+/* Most of this code was refrenced from the https://css-tricks.com/snippets/css/typewriter-effect/ tutorial although this code only allows the text to be typed on one line so I had to look through www.stackoverflow.com to peace together how to add in a second line that included the text to be hidden until the first line was done typing along with a delay in the annimantion.  */
+
+.typewriter p {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 4vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.0s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.typewriter2 {
+  animation: cssAnimation 0s 3.5s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+.typewriter2 p {
+  text-align: center;
+  font-size: 4vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.0s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+
+    typing 3.5s steps(50, end),
+    blink-caret 0.75s step-end infinite;
+ animation-delay: 3.5s;
+
+
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6C747C;; }
+}
